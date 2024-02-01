@@ -8,7 +8,43 @@
 </head>
 
 <body>
-    <p>Filen skapad</p>
+    <header>
+        <div class="hamburger-menu">
+            <span class="menu-icon">☰</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Startsida</a></li>
+                <li><a href="pictures.html">Bilder</a></li>
+                <li><a href="about.html">Om Webbplatsen</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Uppgiftsbeskrivning</h1>
+    <p>
+        Här ska du skapa en grundstruktur för webbutveckling kompletterat med automatisering av uppgifter. Det ska vara
+        för en webbplats som innehåller HTML, CSS, JavaScript och bilder.
+
+        Du skall använda NodeJs för att automatisera uppgifterna. Du kan använda exempelvis Parcel, Gulp eller annat
+        system för detta.
+        Installerade paket ska finnas med i en package.json-fil. Det ska gå att återställa din applikation med npm
+        install.
+
+        De uppgifter som skall automatiskeras är:</p>
+    <ul>
+        <li>Minifiering av CSS. (Vi kommer även använda transpilering av SCSS/SASS till CSS i senare moment i kursen)
+        </li>
+        <li>Transpilering och minifiering av JavaScript.</li>
+        <li>Minifiering av HTML.</li>
+        <li>Optimering av bilder - skall ske automatiskt vid uppdatering av bilder. Använd moderna bildformat
+            (exempelvis WebP eller AVIF) och passande inställningar för dessa.</li>
+        <li>Bakåtkompabilitet i genererade filer, så att exempelvis JavaScript transpileras så att dessa fungerar i så
+            många webbläsare som möjligt.</li>
+        <li>Kopiering av arbetsfiler till mapp för publicering med optimerade filer.</li>
+    </ul>
+    <p>Använder <em>Browserlist</em>s försinställning: <b>> 0.5%, last 2 versions, Firefox ESR, not dead</b>. 99.5% av
+        de populäraste webbläsarna , Dessa webbläsares tidigare 2 versioner , Firefox ESR (Firefox långtidssupport [kort
+        och koncist en version som uppdateras långsammare]) och uteslut "döda" webbläsare.</p>
 </body>
 
 </html>

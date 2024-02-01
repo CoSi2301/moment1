@@ -5,6 +5,9 @@
   "author": "",
   "license": "ISC",
   "source": "src/index.html",
+  "browserslist": [
+    "defaults"
+  ],
   "scripts": {
     "start": "parcel",
     "build": "parcel build"
