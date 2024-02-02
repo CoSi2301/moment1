@@ -11,8 +11,39 @@
 
 body {
   font-size: 1.6rem;
+  line-height: 1.6;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
   padding: 3em;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+/* Sidnavigering
+------------------------------------------------------------------------------------- Sidnavigering */
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #f4f4f4;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger-menu i {
+  font-size: 24px;
 }
