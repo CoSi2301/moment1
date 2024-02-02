@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arbetsprocess - | Moment 1 - cosi2301 VT2024</title>
+    <link rel="stylesheet" href="css/stil.css">
 </head>
 
 <body>
     <header>
         <div class="hamburger-menu">
             <span class="menu-icon">☰</span>
+            <span class="close-icon" style="display: none;">✖</span>
         </div>
         <nav>
             <ul>
@@ -39,12 +41,19 @@
         <li>Optimering av bilder - skall ske automatiskt vid uppdatering av bilder. Använd moderna bildformat
             (exempelvis WebP eller AVIF) och passande inställningar för dessa.</li>
         <li>Bakåtkompabilitet i genererade filer, så att exempelvis JavaScript transpileras så att dessa fungerar i så
-            många webbläsare som möjligt.</li>
+            många webbläsare som möjligt.<ul>
+                <li>
+                    Använder <em>Browserlist</em>s försinställning: <b>> 0.5%, last 2 versions, Firefox ESR, not
+                        dead</b>. Webbläsare
+                    över 0.5% av marknaden , Dessa webbläsares 2 senaste versioner , Firefox ESR (Firefox
+                    långtidssupport [kort
+                    och koncist en version som uppdateras långsammare]) och uteslut "döda" webbläsare.
+                </li>
+            </ul>
+        </li>
         <li>Kopiering av arbetsfiler till mapp för publicering med optimerade filer.</li>
     </ul>
-    <p>Använder <em>Browserlist</em>s försinställning: <b>> 0.5%, last 2 versions, Firefox ESR, not dead</b>. 99.5% av
-        de populäraste webbläsarna , Dessa webbläsares tidigare 2 versioner , Firefox ESR (Firefox långtidssupport [kort
-        och koncist en version som uppdateras långsammare]) och uteslut "döda" webbläsare.</p>
+    <p>...</p>
 </body>
 
 </html>
