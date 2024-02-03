@@ -5,11 +5,15 @@
   "author": "",
   "license": "ISC",
   "source": "src/index.html",
+  "browserslist": [
+    "defaults"
+  ],
   "scripts": {
     "start": "parcel",
     "build": "parcel build"
   },
   "devDependencies": {
-    "parcel": "^2.11.0"
+    "parcel": "^2.11.0",
+    "sharp": "^0.31.3"
   }
 }

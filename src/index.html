@@ -5,10 +5,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Startsidan - DT211G | Moment 1 - cosi2301 VT2024</title>
+    <link rel="stylesheet" href="css/stil.css">
 </head>
 
 <body>
-    <p>Filen skapad</p>
+    <div class="container">
+        <header>
+            <div class="hamburger-menu">
+                <span class="menu-icon">☰</span>
+                <span class="close-icon" style="display: none;">✖</span>
+            </div>
+            <nav>
+                <div class="page-logo">cosi2301</div>
+                <ul>
+                    <li><a href="#" class="active">Startsida</a></li>
+                    <li><a href="pictures.html">Bilder</a></li>
+                    <li><a href="about.html">Om Webbplatsen</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Startsidan</h1>
+            <p>Syftet med uppgiften är att:</p>
+            <ul>
+                <li>Få en inblick hur NodeJS kan användas för att underlätta arbetet med att utveckla en webbplats.</li>
+                <li>Kunna automatisera uppgifter med något kommandobaserat verktyg i NodeJs, med syfte att förenkla
+                    utvecklingsarbetet av en webbplats.</li>
+                <li>Kunna skapa en automatiserad utvecklingsmiljö baserad på Git och NodeJs för att kunna göra
+                    automatisk
+                    publicering vid uppdatering av webbplatsen/Git-repot.</li>
+                <li>Kunna automatisera transpilering och minifiering av CSS, HTML och JavaScript samt automatiskt skapa
+                    optimerade grafikfiler.</li>
+            </ul>
+            <p> Skapa en demowebbplats som innehåller HTML, CSS och JavaScript. Sidan skall innehålla en huvudmeny med
+                stöd
+                för
+                ett godtyckligt antal menyalternativ. Sidan ska naturligtvis var fullt responsiv.
+
+                Webbplatsen skall bestå av minst tre undersidor:</p>
+            <ul>
+                <li>Startsida med info om uppgiften</li>
+                <li>Undersida för bilder med minst fem stycken fotografier</li>
+                <li>En undersida för publicering där du beskriver din skapade arbetsprocess (se nedan).</li>
+            </ul>
+            <p>Filerna skall vara väl strukturerade, med underkataloger för CSS, JavaScript och bilder.
+
+                Det ska finnas skiljd filstruktur mellan arbetsfiler och publiceringsfiler. </p>
+            <p>
+                Här ska du skapa en grundstruktur för webbutveckling kompletterat med automatisering av uppgifter. Det
+                ska
+                vara
+                för en webbplats som innehåller HTML, CSS, JavaScript och bilder.
+
+                Du skall använda NodeJs för att automatisera uppgifterna. Du kan använda exempelvis Parcel, Gulp eller
+                annat
+                system för detta.
+                Installerade paket ska finnas med i en package.json-fil. Det ska gå att återställa din applikation med
+                npm
+                install.</p>
+        </main>
+        <footer>
+            <p>Laborationsuppgift 1 för kursen DT211G.<br>Automatisering & publicering.<br>
+                © CoSi2301, VT2024</p>
+        </footer>
+    </div>
+    <script src="js/main.js" type="module"></script>
 </body>
 
 </html>

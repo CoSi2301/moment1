@@ -1,0 +1,30 @@
+/*--------------------------------------------------------------------------------------------------*/
+/* Sidnavigering
+------------------------------------------------------------------------------------- Sidnavigering */
+
+h1 {
+  font-size: 4rem;
+}
+
+.hamburger-menu {
+  display: block;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 2.4rem;
+}
+
+nav ul {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  text-align: left;
+  padding: 2rem;
+  position: absolute;
+  top: 6rem;
+  left: 0;
+}
+
+nav ul li {
+  padding: 1rem 0;
+}

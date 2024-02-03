@@ -1,0 +1,115 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 5rem 0 0 0;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+main {
+  width: 100%;
+  align-self: center;
+  flex-grow: 1;
+  background-color: var(--white);
+  max-width: 90rem;
+  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
+    rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+  border-radius: 1rem;
+  padding: 3rem;
+  margin: 5rem 0;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+/* Sidnavigering
+------------------------------------------------------------------------------------- Sidnavigering */
+nav {
+  width: fit-content;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+nav ul {
+  list-style: none;
+  font-size: 2.4rem;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--secondary);
+}
+
+nav ul li a {
+  padding: 1rem;
+  display: block;
+  text-decoration: none;
+  color: var(--primary);
+}
+
+.active {
+  background-color: var(--primary);
+  color: var(--white);
+  cursor: default;
+}
+
+nav ul li a:hover:not(.active) {
+  background-color: var(--primary);
+  color: var(--white);
+  cursor: pointer;
+}
+
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+/* logotyp
+------------------------------------------------------------------------------------------- logotyp */
+
+.page-logo {
+  background-color: var(--primary);
+  color: var(--accent);
+  display: inline-flex;
+  font-size: 3.6rem;
+  font-family: "Poor Story", system-ui;
+  font-weight: 400;
+  border-right: 1rem solid rgb(220, 196, 142);
+  padding: 0 1rem;
+  cursor: default;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+/* Bildsidan
+----------------------------------------------------------------------------------------- Bildsidan */
+
+.pics-holder {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.pics-holder img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.8rem;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+/* Sidfoten
+------------------------------------------------------------------------------------------ Sidfoten */
+footer {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  padding: 2rem 0;
+  border-top: 1rem solid rgb(220, 196, 142);
+  background-color: var(--primary);
+  color: var(--secondary);
+}

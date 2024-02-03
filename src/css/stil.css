@@ -1,0 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono&family=Poor+Story&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("reset.css");
+@import url("basic.css");
+@import url("basic-stil.css");
+@import url("sm-screen.css") (max-width: 600px);
+@import url("lg-screen.css") (min-width: 600.5px);
