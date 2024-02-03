@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arbetsprocess - | Moment 1 - cosi2301 VT2024</title>
     <link rel="stylesheet" href="css/stil.css">
-    <link rel="stylesheet" href="css/mediaqueries.css">
 </head>
 
 <body>
@@ -36,19 +35,49 @@
         De uppgifter som skall automatiskeras är:</p>
     <ul>
         <li>Minifiering av CSS. (Vi kommer även använda transpilering av SCSS/SASS till CSS i senare moment i kursen)
+            <ul>
+                <li>
+                    Parcel minifierar CSS automatiskt när man kör build. Har för närvarande sex .css-filer som blir
+                    minifierade och sammanslagna till en.
+                </li>
+            </ul>
         </li>
-        <li>Transpilering och minifiering av JavaScript.</li>
-        <li>Minifiering av HTML.</li>
+        <li>Transpilering och minifiering av JavaScript.
+            <ul>
+                <li>
+                    Parcel minifierar Javascript automatiskt när man kör build. Har för närvarande en .js-fil som blir
+                    minifierad och transpilerad (Se nedan).
+                </li>
+            </ul>
+        </li>
+        <li>Minifiering av HTML.
+            <ul>
+                <li>
+                    Parcel minifierar HTML automatiskt när man kör build. Har för närvarande tre .html-filer som blir
+                    minifierade.
+                </li>
+            </ul>
+        </li>
         <li>Optimering av bilder - skall ske automatiskt vid uppdatering av bilder. Använd moderna bildformat
-            (exempelvis WebP eller AVIF) och passande inställningar för dessa.</li>
+            (exempelvis WebP eller AVIF) och passande inställningar för dessa.
+            <ul>
+                <li>
+                    Optimerar bilder med sharp. När jag ändrade grundinställningen för kvaliteten på bilderna (80
+                    default) till 70 så sparar den nya bilder som jpeg. Mina bilder hade filändelsen jpg och jag fattar
+                    verkligen inte hur jag kan styra från jpeg till jpg.<br>Har "löst" det genom att döpa om originalen
+                    till jpeg. Utöver att anpassas repsonsivt utifrån skärmstorlek så skapas optimerade webp-versioner i
+                    picture-taggen.
+                </li>
+            </ul>
+        </li>
         <li>Bakåtkompabilitet i genererade filer, så att exempelvis JavaScript transpileras så att dessa fungerar i så
             många webbläsare som möjligt.<ul>
                 <li>
-                    Använder <em>Browserlist</em>s försinställning: <b>> 0.5%, last 2 versions, Firefox ESR, not
-                        dead</b>. Webbläsare
-                    över 0.5% av marknaden , Dessa webbläsares 2 senaste versioner , Firefox ESR (Firefox
+                    Använder <em>Browserlist</em>s förinställning: <b>> 0.5%, last 2 versions, Firefox ESR, not
+                        dead</b>.<br><b>Om jag förstått rätt så träffar vi</b> webbläsare
+                    över 0.5% av marknaden , dessa webbläsares 2 senaste versioner , Firefox ESR (Firefox
                     långtidssupport [kort
-                    och koncist en version som uppdateras långsammare]) och uteslut "döda" webbläsare.
+                    och koncist en version som uppdateras långsammare]) och utesluter "döda" webbläsare.
                 </li>
             </ul>
         </li>
@@ -69,7 +98,9 @@
     <p>Börjat med att ange lite grundläggande saker för automatiseringen såsom Parcel och skapa en repo på Github. Denna
         repo har både en Main branch och en branch kallad develop som används. Sedan hämtar netlify informationen från
         Github och uppdaterar när main branch blir uppdaterad.</p>
-    <p>Sedan skapades de grundläggande filerna som krävs för uppgiften.</p>
+    <p>Sedan skapades de grundläggande filerna som krävs för uppgiften.Ett väldigt grundläggande utseende har sedan
+        tillämpats. Därefter har bilder fotats och lagts till. Med hjälp av sharp så skapas automatiskt nu
+        .webp-versioner av alla bilderna i respektive storlek för satta media queries.</p>
     <script src="js/main.js" type="module"></script>
 </body>
 

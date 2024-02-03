@@ -1,49 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono&family=Poor+Story&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 @import url("reset.css");
-
-/*--------------------------------------------------------------------------------------------------*/
-/* Grundläggande
-------------------------------------------------------------------------------------- Grundläggande */
-
-:root {
-  font-size: 62.5%;
-}
-
-body {
-  font-size: 1.6rem;
-  line-height: 1.6;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  padding: 3em;
-}
-
-/*--------------------------------------------------------------------------------------------------*/
-/* Sidnavigering
-------------------------------------------------------------------------------------- Sidnavigering */
-
-nav ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  background-color: #f4f4f4;
-}
-
-nav ul li {
-  margin: 0 10px;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: #333;
-}
-
-.hamburger-menu {
-  display: none;
-  cursor: pointer;
-}
-
-.hamburger-menu i {
-  font-size: 24px;
-}
+@import url("basic.css");
+@import url("basic-stil.css");
+@import url("sm-screen.css") (max-width: 600px);
+@import url("lg-screen.css") (min-width: 600.5px);
