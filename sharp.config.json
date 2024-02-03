@@ -1,7 +1,6 @@
 {
   "jpeg": {
-    "quality": 70,
-    "toFile": "output.jpg"
+    "quality": 70
   },
   "webp": {
     "quality": 70
