@@ -9,98 +9,108 @@
 </head>
 
 <body>
-    <header>
-        <div class="hamburger-menu">
-            <span class="menu-icon">☰</span>
-            <span class="close-icon" style="display: none;">✖</span>
-        </div>
-        <nav>
+    <div class="container">
+        <header>
+            <div class="hamburger-menu">
+                <span class="menu-icon">☰</span>
+                <span class="close-icon" style="display: none;">✖</span>
+            </div>
+            <nav>
+                <div class="page-logo">cosi2301</div>
+                <ul>
+                    <li><a href="index.html">Startsida</a></li>
+                    <li><a href="pictures.html">Bilder</a></li>
+                    <li><a href="#" class="active">Om Webbplatsen</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Arbetsprocess</h1>
+            <p>
+                De uppgifter som skall automatiseras är:</p>
             <ul>
-                <li><a href="index.html">Startsida</a></li>
-                <li><a href="pictures.html">Bilder</a></li>
-                <li><a href="about.html">Om Webbplatsen</a></li>
-            </ul>
-        </nav>
-    </header>
-    <h1>Uppgiftsbeskrivning</h1>
-    <p>
-        Här ska du skapa en grundstruktur för webbutveckling kompletterat med automatisering av uppgifter. Det ska vara
-        för en webbplats som innehåller HTML, CSS, JavaScript och bilder.
-
-        Du skall använda NodeJs för att automatisera uppgifterna. Du kan använda exempelvis Parcel, Gulp eller annat
-        system för detta.
-        Installerade paket ska finnas med i en package.json-fil. Det ska gå att återställa din applikation med npm
-        install.
-
-        De uppgifter som skall automatiskeras är:</p>
-    <ul>
-        <li>Minifiering av CSS. (Vi kommer även använda transpilering av SCSS/SASS till CSS i senare moment i kursen)
-            <ul>
-                <li>
-                    Parcel minifierar CSS automatiskt när man kör build. Har för närvarande sex .css-filer som blir
-                    minifierade och sammanslagna till en.
+                <li>Minifiering av CSS. (Vi kommer även använda transpilering av SCSS/SASS till CSS i senare moment i
+                    kursen)
+                    <ul>
+                        <li>
+                            Parcel minifierar CSS automatiskt när man kör build. Har för närvarande sex .css-filer som
+                            blir
+                            minifierade och sammanslagna till en.
+                        </li>
+                    </ul>
+                </li>
+                <li>Transpilering och minifiering av JavaScript.
+                    <ul>
+                        <li>
+                            Parcel minifierar Javascript automatiskt när man kör build. Har för närvarande en .js-fil
+                            som
+                            blir
+                            minifierad och transpilerad (Se nedan).
+                        </li>
+                    </ul>
+                </li>
+                <li>Minifiering av HTML.
+                    <ul>
+                        <li>
+                            Parcel minifierar HTML automatiskt när man kör build. Har för närvarande tre .html-filer som
+                            blir
+                            minifierade.
+                        </li>
+                    </ul>
+                </li>
+                <li>Optimering av bilder - skall ske automatiskt vid uppdatering av bilder. Använd moderna bildformat
+                    (exempelvis WebP eller AVIF) och passande inställningar för dessa.
+                    <ul>
+                        <li>
+                            Optimerar bilder med sharp. När jag ändrade grundinställningen för kvaliteten på bilderna
+                            (80
+                            default) till 70 så sparar den nya bilder som jpeg. Mina bilder hade filändelsen jpg och jag
+                            fattar
+                            verkligen inte hur jag kan styra från jpeg till jpg.<br>Har "löst" det genom att döpa om
+                            originalen
+                            till jpeg. Utöver att sidan anpassas repsonsivt utifrån skärmstorlek så skapas optimerade
+                            webp-versioner i picture-taggen.
+                        </li>
+                    </ul>
+                </li>
+                <li>Bakåtkompabilitet i genererade filer, så att exempelvis JavaScript transpileras så att dessa
+                    fungerar i
+                    så
+                    många webbläsare som möjligt.<ul>
+                        <li>
+                            Använder <em>Browserlist</em>s förinställning: <b>> 0.5%, last 2 versions, Firefox ESR, not
+                                dead</b>.<br><b>Om jag förstått rätt så träffar vi</b> webbläsare
+                            över 0.5% av marknaden , dessa webbläsares 2 senaste versioner , Firefox ESR (Firefox
+                            långtidssupport [kort
+                            och koncist en version som uppdateras långsammare]) och utesluter "döda" webbläsare.
+                        </li>
+                    </ul>
+                </li>
+                <li>Kopiering av arbetsfiler till mapp för publicering med optimerade filer.
+                    <ul>
+                        <li>
+                            De optimerade filerna läggs automatiskt i mappen dist.
+                        </li>
+                    </ul>
                 </li>
             </ul>
-        </li>
-        <li>Transpilering och minifiering av JavaScript.
-            <ul>
-                <li>
-                    Parcel minifierar Javascript automatiskt när man kör build. Har för närvarande en .js-fil som blir
-                    minifierad och transpilerad (Se nedan).
-                </li>
-            </ul>
-        </li>
-        <li>Minifiering av HTML.
-            <ul>
-                <li>
-                    Parcel minifierar HTML automatiskt när man kör build. Har för närvarande tre .html-filer som blir
-                    minifierade.
-                </li>
-            </ul>
-        </li>
-        <li>Optimering av bilder - skall ske automatiskt vid uppdatering av bilder. Använd moderna bildformat
-            (exempelvis WebP eller AVIF) och passande inställningar för dessa.
-            <ul>
-                <li>
-                    Optimerar bilder med sharp. När jag ändrade grundinställningen för kvaliteten på bilderna (80
-                    default) till 70 så sparar den nya bilder som jpeg. Mina bilder hade filändelsen jpg och jag fattar
-                    verkligen inte hur jag kan styra från jpeg till jpg.<br>Har "löst" det genom att döpa om originalen
-                    till jpeg. Utöver att anpassas repsonsivt utifrån skärmstorlek så skapas optimerade webp-versioner i
-                    picture-taggen.
-                </li>
-            </ul>
-        </li>
-        <li>Bakåtkompabilitet i genererade filer, så att exempelvis JavaScript transpileras så att dessa fungerar i så
-            många webbläsare som möjligt.<ul>
-                <li>
-                    Använder <em>Browserlist</em>s förinställning: <b>> 0.5%, last 2 versions, Firefox ESR, not
-                        dead</b>.<br><b>Om jag förstått rätt så träffar vi</b> webbläsare
-                    över 0.5% av marknaden , dessa webbläsares 2 senaste versioner , Firefox ESR (Firefox
-                    långtidssupport [kort
-                    och koncist en version som uppdateras långsammare]) och utesluter "döda" webbläsare.
-                </li>
-            </ul>
-        </li>
-        <li>Kopiering av arbetsfiler till mapp för publicering med optimerade filer.</li>
-    </ul>
-    <p> Skapa en demowebbplats som innehåller HTML, CSS och JavaScript. Sidan skall innehålla en huvudmeny med stöd för
-        ett godtyckligt antal menyalternativ. Sidan ska naturligtvis var fullt responsiv.
-
-        Webbplatsen skall bestå av minst tre undersidor:</p>
-    <ul>
-        <li>Startsida med info om uppgiften</li>
-        <li>Undersida för bilder med minst fem stycken fotografier</li>
-        <li>En undersida för publicering där du beskriver din skapade arbetsprocess (se nedan).</li>
-    </ul>
-    <p>Filerna skall vara väl strukturerade, med underkataloger för CSS, JavaScript och bilder.
-
-        Det ska finnas skiljd filstruktur mellan arbetsfiler och publiceringsfiler. </p>
-    <p>Börjat med att ange lite grundläggande saker för automatiseringen såsom Parcel och skapa en repo på Github. Denna
-        repo har både en Main branch och en branch kallad develop som används. Sedan hämtar netlify informationen från
-        Github och uppdaterar när main branch blir uppdaterad.</p>
-    <p>Sedan skapades de grundläggande filerna som krävs för uppgiften.Ett väldigt grundläggande utseende har sedan
-        tillämpats. Därefter har bilder fotats och lagts till. Med hjälp av sharp så skapas automatiskt nu
-        .webp-versioner av alla bilderna i respektive storlek för satta media queries.</p>
+            <p>Börjat med att ange lite grundläggande saker för automatiseringen såsom Parcel och skapa en repo på
+                Github.<br>Denna repo har både en Main branch och en branch kallad develop som används. Netlify hämtar
+                informationen från Github och uppdaterar när main branch blir uppdaterad.</p>
+            <p>Grundläggande filerna som krävs för uppgiften har skapats och ett väldigt grundläggande utseende har
+                sedan tillämpats.<br>Därefter har bilder fotats och lagts till. Med hjälp av sharp så skapas automatiskt
+                nu .webp-versioner av alla bilderna i respektive storlek för satta media queries.<br>
+                Nu har ett mer slutgiltigt utseende bestämts och sidfoten har nu också kommit på plats.</p>
+            <p>
+                Klar skillnad mellan arbetsfiler och optimerade publicerbara filer då arbetsfilerna ligger i mappen
+                "src" och de optimerade filerna hamnar i mappen "dist". Netlify hämtar filerna från dist.
+            </p>
+        </main>
+        <footer>
+            <p>Laborationsuppgift 1 för kursen DT211G.<br>Automatisering & publicering.<br>
+                © CoSi2301, VT2024</p>
+        </footer>
+    </div>
     <script src="js/main.js" type="module"></script>
 </body>
 

@@ -1,6 +1,10 @@
 /*--------------------------------------------------------------------------------------------------*/
-/* Grundläggande
-------------------------------------------------------------------------------------- Grundläggande */
+/* Sidnavigering
+------------------------------------------------------------------------------------- Sidnavigering */
+
+h1 {
+  font-size: 4rem;
+}
 
 .hamburger-menu {
   display: block;
@@ -15,13 +19,12 @@ nav ul {
   flex-direction: column;
   width: 100%;
   text-align: left;
-  padding: 20px;
+  padding: 2rem;
   position: absolute;
-  top: 60px;
+  top: 6rem;
   left: 0;
-  background-color: #f4f4f4;
 }
 
 nav ul li {
-  padding: 10px 0;
+  padding: 1rem 0;
 }

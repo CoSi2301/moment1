@@ -9,123 +9,130 @@
 </head>
 
 <body>
-    <header>
-        <div class="hamburger-menu">
-            <span class="menu-icon">☰</span>
-            <span class="close-icon" style="display: none;">✖</span>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Startsida</a></li>
-                <li><a href="pictures.html">Bilder</a></li>
-                <li><a href="about.html">Om Webbplatsen</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h1>Connys fem bilder</h1>
-        <div class="pics-holder">
-            <a href="img/bild1.jpeg">
-                <picture>
-                    <source type="image/webp"
-                        srcset="img/bild1.jpeg?as=webp&width=345, img/bild1.jpeg?as=webp&width=690 2x"
-                        media="(min-width: 1445.5px)">
-                    <source type="image/webp"
-                        srcset="img/bild1.jpeg?as=webp&width=316, img/bild1.jpeg?as=webp&width=632 2x"
-                        media="(min-width: 1180.5px) and (max-width:1445px)">
-                    <source type="image/webp"
-                        srcset="img/bild1.jpeg?as=webp&width=338, img/bild1.jpeg?as=webp&width=676 2x"
-                        media="(min-width: 915.5px) and (max-width:1180px)">
-                    <source type="image/webp"
-                        srcset="img/bild1.jpeg?as=webp&width=382, img/bild1.jpeg?as=webp&width=764 2x"
-                        media="(min-width: 650.5px) and (max-width: 915px)">
-                    <source type="image/webp"
-                        srcset="img/bild1.jpeg?as=webp&width=514, img/bild1.jpeg?as=webp&width=1028 2x"
-                        media="(max-width: 650px)">
-                    <img src="img/bild1.jpeg?width=514" alt="Boken HTML & CSS">
-                </picture>
-            </a><a href="img/bild2.jpeg">
-                <picture>
-                    <source type="image/webp"
-                        srcset="img/bild2.jpeg?as=webp&width=345, img/bild2.jpeg?as=webp&width=690 2x"
-                        media="(min-width: 1445.5px)">
-                    <source type="image/webp"
-                        srcset="img/bild2.jpeg?as=webp&width=316, img/bild2.jpeg?as=webp&width=632 2x"
-                        media="(min-width: 1180.5px) and (max-width:1445px)">
-                    <source type="image/webp"
-                        srcset="img/bild2.jpeg?as=webp&width=338, img/bild2.jpeg?as=webp&width=676 2x"
-                        media="(min-width: 915.5px) and (max-width:1180px)">
-                    <source type="image/webp"
-                        srcset="img/bild2.jpeg?as=webp&width=382, img/bild2.jpeg?as=webp&width=764 2x"
-                        media="(min-width: 650.5px) and (max-width: 915px)">
-                    <source type="image/webp"
-                        srcset="img/bild2.jpeg?as=webp&width=514, img/bild2.jpeg?as=webp&width=1028 2x"
-                        media="(max-width: 650px)">
-                    <img src="img/bild2.jpeg?width=514" alt="Boken JAVASCRIPT & JQUERY">
-                </picture>
-            </a>
-            <a href="img/bild3.jpeg">
-                <picture>
-                    <source type="image/webp"
-                        srcset="img/bild3.jpeg?as=webp&width=345, img/bild3.jpeg?as=webp&width=690 2x"
-                        media="(min-width: 1445.5px)">
-                    <source type="image/webp"
-                        srcset="img/bild3.jpeg?as=webp&width=316, img/bild3.jpeg?as=webp&width=632 2x"
-                        media="(min-width: 1180.5px) and (max-width:1445px)">
-                    <source type="image/webp"
-                        srcset="img/bild3.jpeg?as=webp&width=338, img/bild3.jpeg?as=webp&width=676 2x"
-                        media="(min-width: 915.5px) and (max-width:1180px)">
-                    <source type="image/webp"
-                        srcset="img/bild3.jpeg?as=webp&width=382, img/bild3.jpeg?as=webp&width=764 2x"
-                        media="(min-width: 650.5px) and (max-width: 915px)">
-                    <source type="image/webp"
-                        srcset="img/bild3.jpeg?as=webp&width=514, img/bild3.jpeg?as=webp&width=1028 2x"
-                        media="(max-width: 650px)">
-                    <img src="img/bild3.jpeg?width=514" alt="Boken DON'T MAKE ME THINK! Revisited">
-                </picture>
-            </a><a href="img/bild4.jpeg">
+    <div class="container">
+        <header>
+            <div class="hamburger-menu">
+                <span class="menu-icon">☰</span>
+                <span class="close-icon" style="display: none;">✖</span>
+            </div>
+            <nav>
+                <div class="page-logo">cosi2301</div>
+                <ul>
+                    <li><a href="index.html">Startsida</a></li>
+                    <li><a href="#" class="active">Bilder</a></li>
+                    <li><a href="about.html">Om Webbplatsen</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Connys fem bilder</h1>
+            <div class="pics-holder">
+                <a href="img/bild1.jpeg">
+                    <picture>
+                        <source type="image/webp"
+                            srcset="img/bild1.jpeg?as=webp&width=345, img/bild1.jpeg?as=webp&width=690 2x"
+                            media="(min-width: 1445.5px)">
+                        <source type="image/webp"
+                            srcset="img/bild1.jpeg?as=webp&width=316, img/bild1.jpeg?as=webp&width=632 2x"
+                            media="(min-width: 1180.5px) and (max-width:1445px)">
+                        <source type="image/webp"
+                            srcset="img/bild1.jpeg?as=webp&width=338, img/bild1.jpeg?as=webp&width=676 2x"
+                            media="(min-width: 915.5px) and (max-width:1180px)">
+                        <source type="image/webp"
+                            srcset="img/bild1.jpeg?as=webp&width=382, img/bild1.jpeg?as=webp&width=764 2x"
+                            media="(min-width: 650.5px) and (max-width: 915px)">
+                        <source type="image/webp"
+                            srcset="img/bild1.jpeg?as=webp&width=514, img/bild1.jpeg?as=webp&width=1028 2x"
+                            media="(max-width: 650px)">
+                        <img src="img/bild1.jpeg?width=514" alt="Boken HTML & CSS">
+                    </picture>
+                </a><a href="img/bild2.jpeg">
+                    <picture>
+                        <source type="image/webp"
+                            srcset="img/bild2.jpeg?as=webp&width=345, img/bild2.jpeg?as=webp&width=690 2x"
+                            media="(min-width: 1445.5px)">
+                        <source type="image/webp"
+                            srcset="img/bild2.jpeg?as=webp&width=316, img/bild2.jpeg?as=webp&width=632 2x"
+                            media="(min-width: 1180.5px) and (max-width:1445px)">
+                        <source type="image/webp"
+                            srcset="img/bild2.jpeg?as=webp&width=338, img/bild2.jpeg?as=webp&width=676 2x"
+                            media="(min-width: 915.5px) and (max-width:1180px)">
+                        <source type="image/webp"
+                            srcset="img/bild2.jpeg?as=webp&width=382, img/bild2.jpeg?as=webp&width=764 2x"
+                            media="(min-width: 650.5px) and (max-width: 915px)">
+                        <source type="image/webp"
+                            srcset="img/bild2.jpeg?as=webp&width=514, img/bild2.jpeg?as=webp&width=1028 2x"
+                            media="(max-width: 650px)">
+                        <img src="img/bild2.jpeg?width=514" alt="Boken JAVASCRIPT & JQUERY">
+                    </picture>
+                </a>
+                <a href="img/bild3.jpeg">
+                    <picture>
+                        <source type="image/webp"
+                            srcset="img/bild3.jpeg?as=webp&width=345, img/bild3.jpeg?as=webp&width=690 2x"
+                            media="(min-width: 1445.5px)">
+                        <source type="image/webp"
+                            srcset="img/bild3.jpeg?as=webp&width=316, img/bild3.jpeg?as=webp&width=632 2x"
+                            media="(min-width: 1180.5px) and (max-width:1445px)">
+                        <source type="image/webp"
+                            srcset="img/bild3.jpeg?as=webp&width=338, img/bild3.jpeg?as=webp&width=676 2x"
+                            media="(min-width: 915.5px) and (max-width:1180px)">
+                        <source type="image/webp"
+                            srcset="img/bild3.jpeg?as=webp&width=382, img/bild3.jpeg?as=webp&width=764 2x"
+                            media="(min-width: 650.5px) and (max-width: 915px)">
+                        <source type="image/webp"
+                            srcset="img/bild3.jpeg?as=webp&width=514, img/bild3.jpeg?as=webp&width=1028 2x"
+                            media="(max-width: 650px)">
+                        <img src="img/bild3.jpeg?width=514" alt="Boken DON'T MAKE ME THINK! Revisited">
+                    </picture>
+                </a><a href="img/bild4.jpeg">
 
-                <picture>
-                    <source type="image/webp"
-                        srcset="img/bild4.jpeg?as=webp&width=345, img/bild4.jpeg?as=webp&width=690 2x"
-                        media="(min-width: 1445.5px)">
-                    <source type="image/webp"
-                        srcset="img/bild4.jpeg?as=webp&width=316, img/bild4.jpeg?as=webp&width=632 2x"
-                        media="(min-width: 1180.5px) and (max-width:1445px)">
-                    <source type="image/webp"
-                        srcset="img/bild4.jpeg?as=webp&width=338, img/bild4.jpeg?as=webp&width=676 2x"
-                        media="(min-width: 915.5px) and (max-width:1180px)">
-                    <source type="image/webp"
-                        srcset="img/bild4.jpeg?as=webp&width=382, img/bild4.jpeg?as=webp&width=764 2x"
-                        media="(min-width: 650.5px) and (max-width: 915px)">
-                    <source type="image/webp"
-                        srcset="img/bild4.jpeg?as=webp&width=514, img/bild4.jpeg?as=webp&width=1028 2x"
-                        media="(max-width: 650px)">
-                    <img src="img/bild4.jpeg?width=514" alt="Boken DATABASTEKNIK">
-                </picture>
-            </a><a href="img/bild5.jpeg">
+                    <picture>
+                        <source type="image/webp"
+                            srcset="img/bild4.jpeg?as=webp&width=345, img/bild4.jpeg?as=webp&width=690 2x"
+                            media="(min-width: 1445.5px)">
+                        <source type="image/webp"
+                            srcset="img/bild4.jpeg?as=webp&width=316, img/bild4.jpeg?as=webp&width=632 2x"
+                            media="(min-width: 1180.5px) and (max-width:1445px)">
+                        <source type="image/webp"
+                            srcset="img/bild4.jpeg?as=webp&width=338, img/bild4.jpeg?as=webp&width=676 2x"
+                            media="(min-width: 915.5px) and (max-width:1180px)">
+                        <source type="image/webp"
+                            srcset="img/bild4.jpeg?as=webp&width=382, img/bild4.jpeg?as=webp&width=764 2x"
+                            media="(min-width: 650.5px) and (max-width: 915px)">
+                        <source type="image/webp"
+                            srcset="img/bild4.jpeg?as=webp&width=514, img/bild4.jpeg?as=webp&width=1028 2x"
+                            media="(max-width: 650px)">
+                        <img src="img/bild4.jpeg?width=514" alt="Boken DATABASTEKNIK">
+                    </picture>
+                </a><a href="img/bild5.jpeg">
 
-                <picture>
-                    <source type="image/webp"
-                        srcset="img/bild5.jpeg?as=webp&width=345, img/bild5.jpeg?as=webp&width=690 2x"
-                        media="(min-width: 1445.5px)">
-                    <source type="image/webp"
-                        srcset="img/bild5.jpeg?as=webp&width=316, img/bild5.jpeg?as=webp&width=632 2x"
-                        media="(min-width: 1180.5px) and (max-width:1445px)">
-                    <source type="image/webp"
-                        srcset="img/bild5.jpeg?as=webp&width=338, img/bild5.jpeg?as=webp&width=676 2x"
-                        media="(min-width: 915.5px) and (max-width:1180px)">
-                    <source type="image/webp"
-                        srcset="img/bild5.jpeg?as=webp&width=382, img/bild5.jpeg?as=webp&width=764 2x"
-                        media="(min-width: 650.5px) and (max-width: 915px)">
-                    <source type="image/webp"
-                        srcset="img/bild5.jpeg?as=webp&width=514, img/bild5.jpeg?as=webp&width=1028 2x"
-                        media="(max-width: 650px)">
-                    <img src="img/bild5.jpeg?width=514" alt="En suddig bild på fyra läroböcker">
-                </picture>
-            </a>
-        </div>
-    </main>
+                    <picture>
+                        <source type="image/webp"
+                            srcset="img/bild5.jpeg?as=webp&width=345, img/bild5.jpeg?as=webp&width=690 2x"
+                            media="(min-width: 1445.5px)">
+                        <source type="image/webp"
+                            srcset="img/bild5.jpeg?as=webp&width=316, img/bild5.jpeg?as=webp&width=632 2x"
+                            media="(min-width: 1180.5px) and (max-width:1445px)">
+                        <source type="image/webp"
+                            srcset="img/bild5.jpeg?as=webp&width=338, img/bild5.jpeg?as=webp&width=676 2x"
+                            media="(min-width: 915.5px) and (max-width:1180px)">
+                        <source type="image/webp"
+                            srcset="img/bild5.jpeg?as=webp&width=382, img/bild5.jpeg?as=webp&width=764 2x"
+                            media="(min-width: 650.5px) and (max-width: 915px)">
+                        <source type="image/webp"
+                            srcset="img/bild5.jpeg?as=webp&width=514, img/bild5.jpeg?as=webp&width=1028 2x"
+                            media="(max-width: 650px)">
+                        <img src="img/bild5.jpeg?width=514" alt="En suddig bild på fyra läroböcker">
+                    </picture>
+                </a>
+            </div>
+        </main>
+        <footer>
+            <p>Laborationsuppgift 1 för kursen DT211G.<br>Automatisering & publicering.<br>
+                © CoSi2301, VT2024</p>
+        </footer>
+    </div>
     <script src="js/main.js" type="module"></script>
 </body>
 
